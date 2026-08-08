@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background-image: radial-gradient(circle at 1px 1px, rgba(22,27,51,0.06) 1px, transparent 0);
+  background-size: 22px 22px;
+}
+
+/* Applied only while a student is actively inside a quiz round. */
+body.quiz-lockdown {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+body.quiz-lockdown img {
+  -webkit-user-drag: none;
+  pointer-events: none;
+}
+
+.tag-eyebrow {
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
